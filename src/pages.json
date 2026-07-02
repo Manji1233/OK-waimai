@@ -1,0 +1,74 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": { "navigationBarTitleText": "OK外卖", "navigationStyle": "custom" }
+		},
+		{
+			"path": "pages/shop/shop",
+			"style": { "navigationBarTitleText": "店铺", "navigationStyle": "custom" }
+		},
+		{
+			"path": "pages/seckill/seckill",
+			"style": { "navigationBarTitleText": "秒杀专区", "navigationStyle": "custom" }
+		},
+		{
+			"path": "pages/bargain/bargain",
+			"style": { "navigationBarTitleText": "砍价专区", "navigationStyle": "custom" }
+		},
+		{
+			"path": "pages/cart/cart",
+			"style": { "navigationBarTitleText": "购物车", "navigationStyle": "custom" }
+		},
+		{
+			"path": "pages/checkout/checkout",
+			"style": { "navigationBarTitleText": "下单", "navigationStyle": "custom" }
+		},
+		{
+			"path": "pages/tracking/tracking",
+			"style": { "navigationBarTitleText": "配送跟踪", "navigationStyle": "custom" }
+		},
+		{
+			"path": "pages/orders/orders",
+			"style": { "navigationBarTitleText": "订单", "navigationStyle": "custom" }
+		},
+		{
+			"path": "pages/result/result",
+			"style": { "navigationBarTitleText": "本单节省", "navigationStyle": "custom" }
+		},
+		{
+			"path": "pages/mine/mine",
+			"style": { "navigationBarTitleText": "我的", "navigationStyle": "custom" }
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "OK外卖",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#888888",
+		"selectedColor": "#FF6A00",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/cart/cart",
+				"text": "购物车"
+			},
+			{
+				"pagePath": "pages/orders/orders",
+				"text": "订单"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"text": "我的"
+			}
+		]
+	}
+}
