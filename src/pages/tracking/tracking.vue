@@ -12,7 +12,7 @@
         <image
           v-if="isRabbit"
           class="map-img"
-          src="/static/forest-map.png"
+          :src="staticUrl('forest-map.png')"
           mode="aspectFill"
         />
 
@@ -176,6 +176,10 @@ const forestPath = [
   { x: 78, y: 82 },
 ]
 
+function staticUrl(path: string) {
+  return `/OK-waimai/static/${path}`
+}
+
 function clamp(n: number, min = 0, max = 1) {
   return Math.max(min, Math.min(max, n))
 }
@@ -252,9 +256,9 @@ const rabbitHeading = computed(() => {
 })
 
 const rabbitSprite = computed(() => {
-  if (rabbitHeading.value === 'front') return '/static/rabbit-courier-front.png'
-  if (rabbitHeading.value === 'back') return '/static/rabbit-courier-back.png'
-  return '/static/rabbit-courier-side.png'
+  if (rabbitHeading.value === 'front') return staticUrl('rabbit-courier-front.png')
+  if (rabbitHeading.value === 'back') return staticUrl('rabbit-courier-back.png')
+  return staticUrl('rabbit-courier-side.png')
 })
 
 const rabbitCourierStyle = computed(() => {
