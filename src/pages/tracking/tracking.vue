@@ -152,9 +152,9 @@ const interactionMsg = ref('')
 const interactionPulse = ref(false)
 let interactionTimer: any
 
-// 兔子: 显示40分钟/实际40秒. 球星: 显示30分钟/实际20秒
+// 兔子: 显示40分钟/实际27秒(1.5倍速). 球星: 显示30分钟/实际10秒(2倍速)
 const isRabbit = computed(() => carrier.value.id === 'rabbit')
-const totalSec = computed(() => isRabbit.value ? 40 : 20)
+const totalSec = computed(() => isRabbit.value ? 27 : 10)
 const showMin = computed(() => isRabbit.value ? 40 : 30)
 let timer: any
 let redirectTimer: any
