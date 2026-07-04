@@ -177,7 +177,7 @@ const forestPath = [
 ]
 
 function staticUrl(path: string) {
-  return `/OK-waimai/static/${path}`
+  return `${import.meta.env.BASE_URL}static/${path}`
 }
 
 function clamp(n: number, min = 0, max = 1) {
